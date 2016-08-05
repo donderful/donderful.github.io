@@ -2,29 +2,53 @@
 <html lang="en-us">
   <head>
     <title>Donderful.GitHub.io by Ryan Lau</title>
+
+    <!-- Link to bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-    </nav>
-
-    <div class="container">
-      <div class="blurb">
-          <h1>Hello world!</h1>
-          <p>
-            Just trying to type something useful here!
-          </p>
+    <header class="container">
+      <div class="row">
+        <h1 class="col-sm-8">Test page</h1>
+        <nav class="col-sm-4">
+          <p><a href="#">Home</a></p>
+          <p><a href="#">Blog</a></p>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <footer>
-      <ul>
-        <li><a href="https://www.google.com">Contact me</a></li>
-      </ul>
+    <section class="jumbotron">
+      <div class="container">
+        <div class="row text-center">
+          <h1>Hello world!</h1>
+          <p>This looks a bit better.</p>
+          <p>
+            <a class="btn btn-primary btn-large" href="#">
+              Press me
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container">
+      <div class="row">
+        <p class="col-sm-4">
+          Ryan Lau
+        </p>
+        <ul class="col-sm-8">
+          <li class="col-sm-1">
+            <a href="#"> Contact </a>
+          </li>
+          <li class="col-sm-1">
+            <a href="#"> Email </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

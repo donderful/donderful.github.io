@@ -1,0 +1,58 @@
+header
+{
+  padding: 20px 0;
+}
+
+header .row
+{
+  display: flex;
+  align-items: center;
+}
+
+header h1
+{
+  font-family: 'Comic Sans MS', sans-serif;
+}
+
+header nav
+{
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p
+{
+  padding: 0 10px;
+  margin: 10px;
+}
+
+.jumbotron
+{
+  display: flex;
+  align-items: center;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+  background-image: url('../img/isaac.png');
+  background-size: cover;
+  height: 500px;
+}
+
+.jumbotron a, .jumbotron h1, .jumbotron p
+{
+  color: #fff;
+  font-family: 'Comic Sans MS';
+}
+
+footer
+{
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
