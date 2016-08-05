@@ -11,7 +11,7 @@ header .row
 
 header h1
 {
-  font-family: 'Comic Sans MS', sans-serif;
+  font-family: Tahoma, Geneva, sans-serif;
 }
 
 header nav
@@ -36,10 +36,49 @@ header p
   height: 500px;
 }
 
+.row-centered
+{
+    text-align:center;
+}
+
+.col-centered
+{
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
 .jumbotron a, .jumbotron h1, .jumbotron p
 {
   color: #fff;
-  font-family: 'Comic Sans MS';
+  font-family: Tahoma, Geneva, sans-serif
+}
+
+.img-thumbnail
+{
+  width: 200px;
+}
+
+.thumbnails
+{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.thumbnails h3, .thumbnails p
+{
+  padding-left: 7px;
+  padding-right:7px;
+}
+
+.form-horizontal
+{
+  padding: 40px 0;
 }
 
 footer

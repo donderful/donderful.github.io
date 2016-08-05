@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript</title>
+
+    <!-- Link to bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+    <!-- Test script -->
+    <script src="js/test.js"></script>
+  </head>
+
+  <body>
+    <header class="container">
+      <div class="row">
+        <h1 class="col-sm-8">Best font</h1>
+        <nav class="col-sm-4">
+          <p><a href="index.html">Home</a></p>
+          <p><a href="#">Blog</a></p>
+        </nav>
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="row row-centered">
+        <div class="col-sm-8 col-centered">
+          <h1>Login page</h1>
+          <p id="demo">
+            Please enter your personal details.
+          </p>
+        </div>
+
+        <div class="col-sm-8 col-centered">
+          <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button class="btn btn-default" type="button" onClick="myFunction()">Sign in</button>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <footer class="container">
+      <div class="row">
+        <p class="col-sm-4">
+          &copy; 2016 Ryan Lau
+        </p>
+        <ul class="col-sm-8">
+          <li class="col-sm-1">
+            <a href="#"> Contact </a>
+          </li>
+          <li class="col-sm-1">
+            <a href="#"> Email </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
