@@ -1,6 +1,7 @@
 header
 {
   padding: 20px 0;
+  background-color: white;
 }
 
 header .row
@@ -81,10 +82,21 @@ header p
   padding: 40px 0;
 }
 
+input.ng-invalid
+{
+    background-color: lightpink;
+}
+
+input.ng-valid
+{
+    background-color: lightgreen;
+}
+
 footer
 {
   font-size: 12px;
   padding: 20px 0;
+  background-color: white;
 }
 
 footer .col-sm-8 {
