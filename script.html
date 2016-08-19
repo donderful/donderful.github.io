@@ -1,166 +1,167 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
+
+<head>
     <title>Javascript</title>
 
     <!-- Link to bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
     <!-- Link to main stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 
     <!-- AngularJS -->
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-  </head>
+</head>
 
-  <body ng-app="myApp">
+<body ng-app="myApp">
 
     <!-- Header -->
     <header class="container">
-      <div class="row">
-        <h1 class="col-sm-8">Best font</h1>
-        <nav class="col-sm-4">
-          <p><a href="index.html">Home</a></p>
-          <p><a href="#">Blog</a></p>
-        </nav>
-      </div>
+        <div class="row">
+            <h1 class="col-sm-8">Best font</h1>
+            <nav class="col-sm-4">
+                <p><a href="index.html">Home</a></p>
+                <p><a href="#">Blog</a></p>
+            </nav>
+        </div>
     </header>
 
     <!-- Form -->
     <section class="container">
-      <div class="row row-centered">
-        <div class="col-sm-8 col-centered">
-          <h1>Login page</h1>
-          <p id="demo">
-            Please enter your personal details.
-          </p>
+        <div class="row row-centered">
+            <div class="col-sm-8 col-centered">
+                <h1>Login page</h1>
+                <p id="demo">
+                    Please enter your personal details.
+                </p>
+            </div>
+
+            <!-- Input boxes -->
+            <div class="col-sm-8 col-centered">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email" ng-model="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password" ng-model="password" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button class="btn btn-default" type="button" onClick="myFunction()">Sign in</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-
-        <!-- Input boxes -->
-        <div class="col-sm-8 col-centered">
-          <form class="form-horizontal">
-              <div class="form-group">
-                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail" placeholder="Email" ng-model="email" required>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                <div class="col-sm-10">
-                  <input type="password" class="form-control" id="inputPassword" placeholder="Password" ng-model="password" required>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Remember me
-                    </label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <button class="btn btn-default" type="button" onClick="myFunction()">Sign in</button>
-                </div>
-              </div>
-            </form>
-        </div>
-      </div>
     </section>
 
     <!-- Test for AngularJS -->
     <section class="container">
-      <div class="row row-centered">
-        <div class="col-sm-8 col-centered" ng-controller="myCtrl" ng-init="quantity=1;price=5">
-          <h1>AngularJS</h1>
-          <p>
-            {{ firstName + " " + lastName }}
-          </p>
+        <div class="row row-centered">
+            <div class="col-sm-8 col-centered" ng-controller="myCtrl" ng-init="quantity=1;price=5">
+                <h1>AngularJS</h1>
+                <p>
+                    {{ firstName + " " + lastName }}
+                </p>
 
-          <form class="form-horizontal">
-              <div class="form-group">
-                <label for="inputQuantity3" class="col-sm-2 control-label">Quantity</label>
-                <div class="col-sm-10">
-                  <input type="number" class="form-control" id="inputQuantity" placeholder="Quantity" ng-model="quantity">
-                </div>
-              </div>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="inputQuantity3" class="col-sm-2 control-label">Quantity</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="inputQuantity" placeholder="Quantity" ng-model="quantity">
+                        </div>
+                    </div>
 
-              <div class="form-group">
-                <label for="inputCost3" class="col-sm-2 control-label">Cost</label>
-                <div class="col-sm-10">
-                  <input type="number" class="form-control" id="inputCost" placeholder="Cost" ng-model="price">
-                </div>
-              </div>
-            </form>
+                    <div class="form-group">
+                        <label for="inputCost3" class="col-sm-2 control-label">Cost</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="inputCost" placeholder="Cost" ng-model="price">
+                        </div>
+                    </div>
+                </form>
 
-            <p>
-               Total in dollar: {{ quantity * price | currency }}
-            </p>
+                <p>
+                    Total in dollar: {{ quantity * price | currency }}
+                </p>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Test for temperature!? -->
     <section class="container">
-      <div class="row row-centered">
-        <div class="col-sm-8 col-centered">
-          <div class="row">
-            <h1>London weather</h1>
-          </div>
-          <div class="row" ng-controller="myCtrl">
-            <div class="col-sm-3" ng-repeat="day in weather.list">
-              <div class="row row-centered">
-                <p class="col-sm-12 text-center">
-                  {{ day.dt*1000 | date: 'MMM dd HH:mm' }}
-                </p>
-              </div>
+        <div class="row row-centered">
+            <div class="col-sm-8 col-centered">
+                <div class="row">
+                    <h1>London weather</h1>
+                </div>
+                <div class="row" ng-controller="myCtrl">
+                    <div class="col-sm-3" ng-repeat="day in weather.list">
+                        <div class="row row-centered">
+                            <p class="col-sm-12 text-center">
+                                {{ day.dt*1000 | date: 'MMM dd HH:mm' }}
+                            </p>
+                        </div>
 
-              <div class="row">
-                <label class="col-sm-6">Temperature</label>
-                <p class="col-sm-6 text-right">
-                  {{ day.main.temp | formatTemperature: 'C': true }}
-                </p>
-              </div>
+                        <div class="row">
+                            <label class="col-sm-6">Temperature</label>
+                            <p class="col-sm-6 text-right">
+                                {{ day.main.temp | formatTemperature: 'C': true }}
+                            </p>
+                        </div>
 
-              <div class="row">
-                <label class="col-sm-6">Max</label>
-                <p class="col-sm-6 text-right">
-                  {{ day.main.temp_max | formatTemperature: 'C':true }}
-                </p>
-              </div>
+                        <div class="row">
+                            <label class="col-sm-6">Max</label>
+                            <p class="col-sm-6 text-right">
+                                {{ day.main.temp_max | formatTemperature: 'C':true }}
+                            </p>
+                        </div>
 
-              <div class="row">
-                <label class="col-sm-6">Min</label>
-                <p class="col-sm-6 text-right">
-                  {{ day.main.temp_min | formatTemperature: 'C': true }}
-                </p>
-              </div>
+                        <div class="row">
+                            <label class="col-sm-6">Min</label>
+                            <p class="col-sm-6 text-right">
+                                {{ day.main.temp_min | formatTemperature: 'C': true }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- Footer -->
     <footer class="container">
-      <div class="row">
-        <p class="col-sm-4">
-          &copy; 2016 Ryan Lau
-        </p>
-        <ul class="col-sm-8">
-          <li class="col-sm-1">
-            <a href="#"> Contact </a>
-          </li>
-          <li class="col-sm-1">
-            <a href="#"> Email </a>
-          </li>
-        </ul>
-      </div>
+        <div class="row">
+            <p class="col-sm-4">
+                &copy; 2016 Ryan Lau
+            </p>
+            <ul class="col-sm-8">
+                <li class="col-sm-1">
+                    <a href="#"> Contact </a>
+                </li>
+                <li class="col-sm-1">
+                    <a href="#"> Email </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 
     <!-- Test Javascript -->
@@ -180,5 +181,6 @@
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-  </body>
+</body>
+
 </html>
