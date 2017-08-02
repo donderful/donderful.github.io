@@ -1,2 +1,4 @@
-name: Ryan Lau
+name: donderful
+title: Invisible
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title

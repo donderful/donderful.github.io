@@ -29,12 +29,9 @@ header p
 
 .jumbotron
 {
-  display: flex;
-  align-items: center;
   text-shadow: 0.25px 0.25px 0.25px #000000;
-  background-image: url('../img/isaac.png');
+  background: transparent url(https://scontent-hkg3-1.xx.fbcdn.net/v/t31.0-8/10917777_10205640750881749_706360300298341103_o.jpg?oh=359f2b76af8bc4ccff17d600bca02e6e&oe=59EF2CE0) no-repeat;
   background-size: cover;
-  height: 500px;
 }
 
 .row-centered
