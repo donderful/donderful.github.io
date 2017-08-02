@@ -1,0 +1,24 @@
+---
+layout: default
+title: Blog
+---
+<div class="page-header">
+  <h1> {{ page.title }} </h1>
+</div>
+
+<div class="media">
+  {% for post in site.posts %}
+  <div class="media-left">
+    <span class="glyphicon glyphicon-star"></span>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">
+      <a href="{{ post.url }}" title="{{ post.title }}"> {{ post.title }} </a>
+      <small> {{ post.date | date_to_string }} </small>
+    </h4>
+    <p>
+      {{ post.excerpt }}
+    </p>
+  </div>
+  {% endfor %}
+</div>

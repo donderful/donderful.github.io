@@ -1,0 +1,106 @@
+header
+{
+  padding: 20px 0;
+  background-color: white;
+}
+
+header .row
+{
+  display: flex;
+  align-items: center;
+}
+
+header h1
+{
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+header nav
+{
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p
+{
+  padding: 0 10px;
+  margin: 10px;
+}
+
+.jumbotron
+{
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+  background: transparent url(https://scontent-hkg3-1.xx.fbcdn.net/v/t31.0-8/10917777_10205640750881749_706360300298341103_o.jpg?oh=359f2b76af8bc4ccff17d600bca02e6e&oe=59EF2CE0) no-repeat;
+  background-size: cover;
+}
+
+.row-centered
+{
+    text-align:center;
+}
+
+.col-centered
+{
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.jumbotron a, .jumbotron h1, .jumbotron p
+{
+  color: #fff;
+  font-family: Tahoma, Geneva, sans-serif
+}
+
+.img-thumbnail
+{
+  width: 200px;
+}
+
+.thumbnails
+{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.thumbnails h3, .thumbnails p
+{
+  padding-left: 7px;
+  padding-right:7px;
+}
+
+.form-horizontal
+{
+  padding: 40px 0;
+}
+
+input.ng-invalid
+{
+    background-color: lightpink;
+}
+
+input.ng-valid
+{
+    background-color: lightgreen;
+}
+
+footer
+{
+  font-size: 12px;
+  padding: 20px 0;
+  background-color: white;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}

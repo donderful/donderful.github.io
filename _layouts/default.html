@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>{{ page.title }}</title>
+
+  <!-- Link to bootstrap -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Link to main stylesheet -->
+  <link rel="stylesheet" type="text/css" href="/css/main.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="container">
+    <div class="row">
+      <h1 class="col-sm-8">GitHub</h1>
+      <nav class="col-sm-4">
+        <p><a href="/index.html">Home</a></p>
+        <p><a href="/blog/index.html">Blog</a></p>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <section class="container">
+    {{ content }}
+  </section>
+
+  <!-- Footer -->
+  <footer class="container">
+    <div class="row">
+      <p class="col-sm-4">
+        &copy; 2017 {{ site.name }}
+      </p>
+      <ul class="col-sm-8">
+        <li class="col-sm-1">
+          <a href="#"> Contact </a>
+        </li>
+        <li class="col-sm-1">
+          <a href="#"> Email </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+<!-- Link to jQuery -->
+<script src="/js/jquery-3.2.1.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/js/bootstrap.min.js"></script>
+</html>
