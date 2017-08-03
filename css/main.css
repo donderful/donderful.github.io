@@ -74,6 +74,17 @@ header p
   padding-right:7px;
 }
 
+.img-caption
+{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.caption
+{
+  margin-top: 12px;
+}
+
 .form-horizontal
 {
   padding: 40px 0;
