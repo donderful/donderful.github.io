@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="zh">
 
 <head>
   <title>{{ page.title }}</title>
@@ -9,6 +9,11 @@
 
   <!-- Link to main stylesheet -->
   <link rel="stylesheet" type="text/css" href="/css/main.css" />
+
+  <!-- Check if user wants math formatting -->
+  {% if page.use_math %}
+    {% include mathjax_support %}
+  {% endif %}
 </head>
 
 <body>
@@ -51,4 +56,11 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="/js/bootstrap.min.js"></script>
+
+<!-- Link to syntax highlighting -->
+{% if page.use_code %}
+<link rel="stylesheet" href="/css/styles/github.css">
+<script src="/css/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{% endif %}
 </html>
