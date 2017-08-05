@@ -2,3 +2,5 @@ name: donderful
 title: Invisible
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+disqus_shortname: donderful-github-io
+url: donderful.github.io
